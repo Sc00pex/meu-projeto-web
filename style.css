@@ -224,13 +224,14 @@ button[type="submit"]:hover {
   font-weight: bold;
   transition: all 0.3s ease;
   width: 240px;
-  text-align: center;
+  text-align: center;  /* <-- alterado: antes era 'left' */
   white-space: nowrap;
   opacity: 0;
   transform: translateY(15px);
   animation: fadeInButtons 1s forwards ease-in-out;
-  margin: 0 auto;
+  margin: 0 auto; /* mantém centralizado */
 }
+
 
 #btnConfirmar:hover,
 #btnEditar:hover {
