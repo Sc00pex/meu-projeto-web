@@ -314,6 +314,3 @@ button[type="submit"]:hover {
   }
 }
 
-main {
-  min-height: calc(100vh - 160px); /* garante que o footer fique no final */
-}
