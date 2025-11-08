@@ -224,7 +224,7 @@ button[type="submit"]:hover {
   font-weight: bold;
   transition: all 0.3s ease;
   width: 240px;
-  text-align: left;
+  text-align: center;
   white-space: nowrap;
   opacity: 0;
   transform: translateY(15px);
