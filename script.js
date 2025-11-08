@@ -25,7 +25,6 @@ if (form) {
     localStorage.setItem("idade", idade);
     localStorage.setItem("curso", curso);
 
-    // ⏳ Aguarda 2 segundos e redireciona
     setTimeout(() => {
       window.location.href = "confirmation.html";
     }, 2000);

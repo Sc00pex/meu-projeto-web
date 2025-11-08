@@ -20,7 +20,7 @@ header {
   background-color: black;
   padding: 20px 0;
   text-align: center;
-  font-size: 1.0rem;
+  font-size: 1rem;
   box-shadow: 0 2px 10px rgba(0, 0, 0, 0.5);
 }
 
@@ -39,8 +39,7 @@ main {
   padding: 25px;
   border-radius: 10px;
   border: 2px solid white;
-  box-shadow: 0 0 18px rgba(255, 255, 255, 0.10),
-              0 0 35px rgba(0, 0, 0, 0.9);
+  box-shadow: 0 0 18px rgba(255, 255, 255, 0.1), 0 0 35px rgba(0, 0, 0, 0.9);
   color: white;
   font-size: 14px;
   line-height: 1.7;
@@ -51,23 +50,19 @@ main {
 }
 
 .card:hover {
-  box-shadow: 0 0 25px rgba(255, 255, 255, 0.25),
-              0 0 45px rgba(0, 0, 0, 0.9);
+  box-shadow: 0 0 25px rgba(255, 255, 255, 0.25), 0 0 45px rgba(0, 0, 0, 0.9);
   transform: translateY(-3px);
 }
 
 @keyframes pulseGlow {
   0% {
-    box-shadow: 0 0 18px rgba(255, 255, 255, 0.10),
-                0 0 35px rgba(0, 0, 0, 0.9);
+    box-shadow: 0 0 18px rgba(255, 255, 255, 0.1), 0 0 35px rgba(0, 0, 0, 0.9);
   }
   50% {
-    box-shadow: 0 0 28px rgba(255, 255, 255, 0.25),
-                0 0 50px rgba(0, 0, 0, 1);
+    box-shadow: 0 0 28px rgba(255, 255, 255, 0.25), 0 0 50px rgba(0, 0, 0, 1);
   }
   100% {
-    box-shadow: 0 0 18px rgba(255, 255, 255, 0.10),
-                0 0 35px rgba(0, 0, 0, 0.9);
+    box-shadow: 0 0 18px rgba(255, 255, 255, 0.1), 0 0 35px rgba(0, 0, 0, 0.9);
   }
 }
 
@@ -104,40 +99,15 @@ footer {
   box-shadow: 0 -2px 10px rgba(0, 0, 0, 0.5);
 }
 
-@media (max-width: 600px) {
-  footer {
-    background-color: #111;
-    color: #ccc;
-  }
-
-  header {
-    flex-direction: column;
-    align-items: center;
-    text-align: center;
-    padding: 10px 0;
-  }
-
-  header h1 {
-    font-size: 1.4rem;
-    margin-bottom: 10px;
-  }
-
-  header nav a {
-    display: inline-block;
-    margin: 5px 10px;
-    font-size: 0.9rem;
-  }
-}
-
 form {
   display: flex;
   flex-direction: column;
-  gap: 10px; 
+  gap: 10px;
   width: 90%;
-  max-width: 370px; 
+  max-width: 370px;
   margin: 0 auto;
   margin-top: 15px;
-  margin-bottom: 35px; 
+  margin-bottom: 35px;
   transition: all 0.3s ease;
 }
 
@@ -193,7 +163,7 @@ button[type="submit"]:hover {
 }
 
 .mensagem {
-  margin-top: 8px; 
+  margin-top: 8px;
   color: #ffffff;
   font-weight: bold;
   text-align: center;
@@ -206,19 +176,17 @@ button[type="submit"]:hover {
   margin-top: 5px;
 }
 
-/* ===== Botões de Confirmação e Edição ===== */
 .botao-container {
-  width: 100%;               /* garante alinhamento central no main */
+  width: 100%;
   display: flex;
-  flex-direction: column;    /* um embaixo do outro */
-  align-items: center;       /* centraliza horizontalmente */
-  justify-content: center;   /* centraliza verticalmente (caso precise) */
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
   gap: 15px;
-  margin: 25px auto 0 auto;  /* centraliza o container */
+  margin: 25px auto 0 auto;
   text-align: center;
   animation: fadeUp 1s ease-in-out;
 }
-
 
 #btnConfirmar {
   display: inline-block;
@@ -231,17 +199,16 @@ button[type="submit"]:hover {
   text-decoration: none;
   font-weight: bold;
   transition: all 0.3s ease;
-  width: 240px;             /* largura fixa p/ alinhar */
-  text-align: center;       /* texto centralizado dentro do botão */
-  white-space: nowrap;      /* impede quebra de linha */
+  width: 240px;             
+  text-align: center;     
+  white-space: nowrap;      
   opacity: 0;
   transform: translateY(15px);
   animation: fadeInButtons 1s forwards ease-in-out;
-  margin: 0 auto; /* centraliza cada botão dentro do container */
+  margin: 0 auto; 
   padding-left: 20px;
 
 }
-
 
 #btnEditar {
   display: inline-block;
@@ -254,13 +221,13 @@ button[type="submit"]:hover {
   text-decoration: none;
   font-weight: bold;
   transition: all 0.3s ease;
-  width: 240px;             /* largura fixa p/ alinhar */
-  text-align: center;       /* texto centralizado dentro do botão */
-  white-space: nowrap;      /* impede quebra de linha */
+  width: 240px;
+  text-align: left;
+  white-space: nowrap;
   opacity: 0;
   transform: translateY(15px);
   animation: fadeInButtons 1s forwards ease-in-out;
-  margin: 0 auto; /* centraliza cada botão dentro do container */
+  margin: 0 auto;
 }
 
 #btnConfirmar:hover,
@@ -269,7 +236,6 @@ button[type="submit"]:hover {
   color: black;
 }
 
-/* animação suave */
 @keyframes fadeInButtons {
   from {
     opacity: 0;
@@ -292,5 +258,51 @@ button[type="submit"]:hover {
   }
 }
 
+/* ----------- RESPONSIVIDADE CELULAR ----------- */
+@media (max-width: 768px) {
+  body {
+    overflow-y: auto;
+  }
 
+  main {
+    width: 85%;
+    margin-top: 25px;
+    margin-bottom: 100px;
+  }
 
+  .card {
+    padding: 20px;
+    font-size: 15px;
+    line-height: 1.6;
+  }
+
+  form {
+    width: 100%;
+    max-width: 100%;
+    margin-bottom: 20px;
+  }
+
+  input,
+  select {
+    font-size: 1rem;
+    padding: 10px;
+  }
+
+  button,
+  #btnConfirmar,
+  #btnEditar {
+    width: 100%;
+    font-size: 1rem;
+    padding: 12px;
+    text-align: center;
+  }
+
+  header h1 {
+    font-size: 1.2rem;
+  }
+
+  footer {
+    font-size: 0.8rem;
+    padding: 10px 0;
+  }
+}
